@@ -36,5 +36,5 @@ async def infer(customerId:int, file: UploadFile = File(...)):
 
 if __name__ == '__main__':
     app_str = 'emotionmodel:emotion_app'
-    uvicorn.run(app_str, host='43.134.36.2', port=22, reload=True, workers=1)
+    uvicorn.run(app_str, host='0.0.0.0', port=8000, reload=True, workers=1)
 
