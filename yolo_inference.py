@@ -118,19 +118,15 @@ def yolo_img(img_file, result_path, model_path, gpu_id, customerId):
       # Emotic category
       for i, emotion in enumerate(pred_cat):
         if emotion in warning_cat:
-          warn_num = warn_num+1
           nagative_cat.append(emotion)
           print(emotion) 
       print(len(pred_cat))
-      
-      ## warn Catagory에 해당하는 감정이 4개 이상이면 WARNING 문구 띄우기 - 추후 삭제
-      if(warn_num>3):          
-        print("------!WARNING!-------")
+  
   
   except Exception:
       pass
 
-  return customerId ,nagative_cat, len(pred_cat); 
+  return { "customerId" : customerId , "emotions" :nagative_cat, "total" : len(pred_cat)}; 
 
 
 
