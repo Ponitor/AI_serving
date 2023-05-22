@@ -58,12 +58,12 @@ def yolo_img(img_file, result_path, model_path, gpu_id, customerId):
   :param result_path: Directory path to save the results (output video).
   :param model_path: Directory path to load models and val_thresholds to perform inference.
   '''   
-  cat = ['Affection', 'Anger', 'Annoyance', 'Anticipation', 'Aversion', 'Confidence', 'Disapproval', 'Disconnection', 
-          'Disquietment', 'Doubt/Confusion', 'Embarrassment', 'Engagement', 'Esteem', 'Excitement', 'Fatigue', 'Fear','Happiness', 
-          'Pain', 'Peace', 'Pleasure', 'Sadness', 'Sensitivity', 'Suffering', 'Surprise', 'Sympathy', 'Yearning']
+  cat = ['affection', 'anger', 'annoyance', 'anticipation', 'aversion', 'confidence', 'disapproval', 'disconnection', 
+          'disquietment', 'confusion', 'embarrassment', 'engagement', 'esteem', 'excitement', 'fatigue', 'fear','happiness', 
+          'pain', 'peace', 'pleasure', 'sadness', 'sensitivity', 'suffering', 'surprise', 'sympathy', 'yearning']
   
   #보이스피싱 WARNING
-  warning_cat = [ 'Anger', 'Annoyance',  'Disapproval', 'Disquietment', 'Doubt/Confusion', 'Sadness', 'Suffering'] 
+  warning_cat = [ 'anger', 'annoyance',  'disapproval', 'disquietment', 'confusion', 'sadness', 'suffering'] 
   
   cat2ind = {}
   ind2cat = {}
@@ -130,7 +130,7 @@ def yolo_img(img_file, result_path, model_path, gpu_id, customerId):
   except Exception:
       pass
 
-  return { "customerId":customerId, "emotions":nagative_cat, "Total" : len(pred_cat)} 
+  return customerId ,nagative_cat, len(pred_cat); 
 
 
 
