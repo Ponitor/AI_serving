@@ -31,7 +31,7 @@ async def infer(customerId:int, file: UploadFile = File(...)):
     results = yolo_img(local_path,result_path,model,0,customerId) #모델에 이미지 넣기
 
       
-    return {  "results" : results }   #"results" 안넣으며 에러
+    return results  
 
 
 
