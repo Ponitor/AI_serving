@@ -93,9 +93,28 @@ _Ronak Kosti, Jose Alvarez, Adria Recasens, Agata Lapedriza_ <br>
 }
 ```
 <br></br>
+
 ## Reference
 [Context Based Emotion Recognition using EMOTIC Dataset]([https://github.com/Tandon-A](https://paperswithcode.com/paper/context-based-emotion-recognition-using))
 
+# Phone Detection
+<br/> 
+코랩에서 실행
+https://colab.research.google.com/drive/1Mkf10zWwA1xrKG2m34_5f4gsSUUDgHFy?usp=sharing
+
+YOLOv5
+<br/> 
+![image](https://user-images.githubusercontent.com/84585914/206726165-498595e8-e5f0-459c-8411-b74ba87c3dbb.png)
+
+
+<br/> 
+Dataset 
+
+<br/> 
+Roboflow(https://roboflow.com/)
 
 # AI Model Serving
 
+## FastAPI
+실시간 서비스인 포니터의 특성상 연산 속도가 중요하기 때문에 속도측면에서 가장 빠르다고 평가받는 FastAPI를 이용해 모델을 서빙했다.  
+https://fastapi.tiangolo.com/![image](https://github.com/Ponitor/AI_serving/assets/90603399/af2effb8-faca-418e-8207-c30be46ee5b6)
