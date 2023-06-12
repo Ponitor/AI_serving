@@ -117,4 +117,4 @@ Roboflow(https://roboflow.com/)
 
 ## FastAPI
 실시간 서비스인 포니터의 특성상 연산 속도가 중요하기 때문에 속도측면에서 가장 빠르다고 평가받는 FastAPI를 이용해 모델을 서빙했다.  
-https://fastapi.tiangolo.com/![image](https://github.com/Ponitor/AI_serving/assets/90603399/af2effb8-faca-418e-8207-c30be46ee5b6)
+![image](https://github.com/Ponitor/AI_serving/assets/90603399/af2effb8-faca-418e-8207-c30be46ee5b6)
